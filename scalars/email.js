@@ -1,7 +1,7 @@
 const { Kind } = require('graphql/language');
 const createScalar = require('../functions/createScalar');
-const { isEmail } = require('validator/lib/isEmail');
 const is = require('@sindresorhus/is');
+const validator = require('validator');
 
 module.exports = createScalar(
   'email',
@@ -16,7 +16,7 @@ module.exports = createScalar(
         throw new TypeError('email value must be a string');
       }
     
-      if (isEmail(value) === false) {
+      if (validator.isEmail(value) === false) {
         throw new TypeError('email value must be a valid email address');
       }
     
