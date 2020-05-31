@@ -9,7 +9,7 @@ module.exports = {
     ...Timestamp.resolver,
   },
   Types: `
-  ${Email.defintion}
+  ${Email.definition}
   ${Timestamp.definition}
   `,
 };
