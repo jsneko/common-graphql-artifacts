@@ -37,6 +37,29 @@ createScalar(
 ```
 See (Custom scalar examples)[https://www.apollographql.com/docs/apollo-server/schema/scalars-enums/#custom-scalar-examples] for Apollo GraphQL to see what is being boilerplated.
 
+This function is accessible via:
+```js
+const { Functions } = require('common-graphql-artifacts'); // Functions.createScalar
+const { Functions: { createScalar } } = require('common-graphql-artifacts');
+const { createScalar } = require('common-graphql-artifacts/functions/');
+const createScalar = require('common-graphql-artifacts/functions/createScalar');
+```
+
+
+### createAuditRecord
+
+Provides a plain object formatted for the custom GraphQL Audit Type.
+If passed a Unix millisecond timestamp (the number of milliseconds since the Unix Epoch) the dates created in the object will be based off of that;
+otherwise, they will based on the current date and time on the server.
+
+This funtion is accessible via:
+```js
+const { Functions } = require('common-graphql-artifacts'); // Functions.createAuditRecord
+const { Functions: { createAuditRecord } } = require('common-graphql-artifacts');
+const { createAuditRecord } = require('common-graphql-artifacts/functions/');
+const createAuditRecord = require('common-graphql-artifacts/functions/createAuditRecord');
+```
+
 ## Scalars
 
 These are custom GraphQL Scalars created to assist in defining GraphQL Types.
@@ -83,13 +106,6 @@ These are custom Types created to provide common Types across microservices.
 
 ### Audit
 ```
-type AuditUser {
-  id: ID,
-  username: String,
-  organizationName: String,
-  organizationId: ID,
-}
-
 type AuditDateTime {
   timestamp: Timestamp,
   iso8601: String,
@@ -97,10 +113,10 @@ type AuditDateTime {
 }
 
 type Audit {
-  user: AuditUser,
   date: AuditDateTime
 }
 ```
 
 This Type provides a common Audit tracking field.
 In order to use this Type you will need to add the Timestamp resolver to your GraphQL microservice.
+Also, if there are fields missing for your purposes, you will need to extend Audit.
