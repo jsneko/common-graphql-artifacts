@@ -1,0 +1,16 @@
+{
+  "name": "common-graphql-artifacts",
+  "version": "1.0.0",
+  "description": "A collection of GraphQL artifacts to be used across microservices.",
+  "main": "index.js",
+  "author": "william.weithers@gmail.com (Bill Weithers)",
+  "license": "MIT",
+  "_moduleDirectors": [
+    "src/"
+  ],
+  "dependencies": {
+    "@sindresorhus/is": "2.1.1",
+    "graphql": "15.0.0",
+    "validator": "13.0.0"
+  }
+}
