@@ -1,4 +1,4 @@
-exports.definition = `
+module.exports = `
 type AuditUser {
   id: ID,
   username: String,
