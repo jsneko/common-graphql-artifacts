@@ -15,7 +15,7 @@ module.exports = function createAuditRecord(timestamp = Date.now()) {
     date: {
       timestamp,
       iso8601: date.toISOString(),
-      server = date.toString(),
+      server: date.toString(),
     },
   };
 }
