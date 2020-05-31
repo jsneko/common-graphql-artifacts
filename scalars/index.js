@@ -1,5 +1,5 @@
-const { Email } = require('./email');
-const { Timestamp } = require('./timestamp');
+const Email = require('./email');
+const Timestamp = require('./timestamp');
 
 module.exports = {
   Email,
