@@ -79,10 +79,10 @@ Under the hood this scalar is validated with the (validator)[https://github.com/
 
 ## Types
 
+These are custom Types created to provide common Types across microservices.
+
 ### Audit
 ```
-scalar Timestamp
-
 type AuditUser {
   id: ID,
   username: String,
@@ -102,4 +102,5 @@ type Audit {
 }
 ```
 
-This Type provides a common Audit tracking field. In order to use this Type you will need to add the Timestamp resolver to your GraphQL microservice.
+This Type provides a common Audit tracking field.
+In order to use this Type you will need to add the Timestamp resolver to your GraphQL microservice.
