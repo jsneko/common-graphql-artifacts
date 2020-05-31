@@ -3,7 +3,7 @@ const createScalar = require('../functions/createScalar');
 const { isEmail } = require('validator/lib/isEmail');
 const is = require('@sindresorhus/is');
 
-module.export = createScalar(
+module.exports = createScalar(
   'email',
   'A scalar representing a valid email address',
   {
