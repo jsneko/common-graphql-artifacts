@@ -5,12 +5,16 @@
   "main": "index.js",
   "author": "william.weithers@gmail.com (Bill Weithers)",
   "license": "MIT",
-  "_moduleDirectors": [
-    "src/"
-  ],
+  "scripts": {
+    "test" : "jest spec.js"
+  },
   "dependencies": {
     "@sindresorhus/is": "2.1.1",
     "graphql": "15.0.0",
     "validator": "13.0.0"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "jest": "^26.0.1"
   }
 }
