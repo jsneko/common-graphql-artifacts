@@ -1,3 +1,4 @@
+'use strict';
 /**
  * Error for methods that have not been overridden
  * 

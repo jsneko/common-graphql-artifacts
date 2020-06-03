@@ -1,3 +1,4 @@
+'use strict';
 const Email = require('./email');
 const Timestamp = require('./timestamp');
 

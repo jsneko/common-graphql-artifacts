@@ -1,3 +1,4 @@
+'use strict';
 const AbstractMethodError = require('../errors/AbstractMethodError');
 
 /**

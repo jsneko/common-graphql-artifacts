@@ -1,3 +1,4 @@
+'use strict';
 const is = require('@sindresorhus/is');
 const createScalar = require('../functions/createScalar');
 

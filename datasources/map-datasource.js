@@ -1,3 +1,4 @@
+'ues strict';
 const Datasource = require('./datasource');
 const { v4 : uuid4 } = require('uuid');
 const RecordDoesNotExistError = require('../errors/RecordDoesNotExistError');

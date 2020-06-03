@@ -1,3 +1,4 @@
+'use strict';
 const { GraphQLScalarType} = require('graphql');
 const assert = require('assert');
 const is = require('@sindresorhus/is');

@@ -1,3 +1,5 @@
+'use strict';
+
 const Datasource = require('../datasources/datasource');
 const MapDatasource = require('../datasources/map-datasource');
 

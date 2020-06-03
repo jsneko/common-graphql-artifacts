@@ -1,3 +1,4 @@
+'use strict';
 const { Kind } = require('graphql/language');
 const createScalar = require('../functions/createScalar');
 const is = require('@sindresorhus/is');

@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = `
 type AuditDateTime {
   timestamp: Timestamp,
